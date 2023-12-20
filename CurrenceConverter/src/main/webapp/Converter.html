@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μετατροπή Ποσών σε Διαφορετικά νομίσματα</title>
+</head>
+<body>
+    <h1>Μετατροπή Ποσών σε Διαφορετικά νομίσματα</h1>
+    <form action="CurrencyConverter" method="post">
+        Ποσό: <input type="text" name="amount" required>
+        Από: 
+        <select name="sourceCurrency">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="GBP">British Pound (GBP)</option>
+        </select>
+        Σε: 
+        <select name="targetCurrency">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="GBP">British Pound (GBP)</option>
+        </select>
+        <input type="submit" value="Μετατροπή">
+    </form>
+</body>
+</html>

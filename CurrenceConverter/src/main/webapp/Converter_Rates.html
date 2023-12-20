@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μετατροπή Ποσών σε Διαφορετικά νομίσματα</title>
+</head>
+<body>
+    <h1>Μετατροπή Ποσών σε Διαφορετικά νομίσματα</h1>
+
+    <form action="CurrencyConverterFromFileServlet" method="post">
+        <label for="amount">Ποσό:</label>
+        <input type="text" name="amount" required>
+
+        <label for="sourceCurrency">Από:</label>
+        <select name="sourceCurrency">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="ALL">Albanian Lek (ALL)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+        </select>
+
+        <label for="targetCurrency">Σε:</label>
+        <select name="targetCurrency">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="ALL">Albanian Lek (ALL)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+        </select>
+
+        <input type="submit" value="Μετατροπή">
+    </form>
+</body>
+</html>
